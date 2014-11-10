@@ -1,6 +1,15 @@
 <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+  <script>
+    function __onGCastApiAvailable(loaded, errorInfo) {
+      if (loaded) {
+        initializeCastApi();
+      } else {
+        console.log(errorInfo);
+    }
+  }
+  </script>
   </head>
 </html>
 
